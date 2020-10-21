@@ -1,0 +1,10 @@
+Do
+ask for input height
+While
+height is < 0 or > 8
+
+store height in variable
+
+
+loop
+print (# (i)\n) height amount of times times

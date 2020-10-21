@@ -1,0 +1,35 @@
+main {
+    padding: 2rem;
+}
+
+.btn {
+    text-transform: capitalize;
+}
+
+.list-group {
+    text-transform: capitalize;
+}
+
+.section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.html-css {
+    display: flex;
+    justify-content: center;
+}
+
+.display-2{
+    margin-bottom: 2rem;
+}
+
+.html-css p {
+    padding: 1rem;
+    border: 1px solid transparent;
+    margin-right: 1rem;
+}
+
+.html-css p:hover {
+    border: 1px solid #222;
+}

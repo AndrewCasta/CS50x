@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <main>
+            <div class="jumbotron">
+              <h1 class="display-4">Andrew's web dev plan</h1>
+              <p class="lead">This website is contains the plan I have in place for learing web development</p>
+              <hr class="my-4">
+              <p>Along with this CS50x course, I'll exploring other areas</p>
+              <a class="btn btn-primary btn-lg" href="index.html" role="button">overview</a>
+            </div>
+            <h2>Main area's of focus!</h2>
+            <ul class="list-group">
+              <li class="list-group-item"><a href="cs50x.html">CS50x</a></li>
+              <li class="list-group-item"><a href="html-css.html">HTML & CSS fundamentals</a></li>
+              <li class="list-group-item"><a href="#" class="under-construction">JavaScript fundamentals</a></li>
+              <li class="list-group-item"><a href="#" class="under-construction">CS50 web</a></li>
+            </ul>
+            <script>
+                const ucLinks = document.querySelectorAll('.under-construction')
+                ucLinks.forEach((link) => {
+                    link.addEventListener('click', () => {
+                        alert('page under construction')
+                    })
+                })
+            </script>
+        </main>
+        <section class="section">
+            <h4>body</h4>
+            <article>
+                <h2 class="display-2 cs50">CS50x</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas debitis qui dicta sapiente. Eum earum, mollitia, quas aperiam dolorem assumenda?
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas debitis qui dicta sapiente. Eum earum, mollitia, quas aperiam dolorem assumenda?
+                </p>
+            </article>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+{% block body %}
+<section class="todo">
+    <h1 class="display-4">Flask Todo App</h1>
+    <h2>Todo List</h2>
+    <ul>
+        {% for task in taskList %}
+        <li>
+            <form action="/delete" method="post">
+              <button>X</button>
+              <span>{{ task }}</span>
+              <input type="text" name="task" value="{{ task }}" hidden />
+            </form>
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="/add">Add task</a>
+    <form action="/add" method="POST">
+        <input id='task' name="task" type="text" placeholder="task name">
+        <input id='submit' type="submit" disabled>
+    </form>
+</section>
+<script>
+    const task = document.querySelector('#task')
+    task.addEventListener("keyup", () => {
+        if (task.value == ""){
+            submit.disabled = true;
+        }
+        else {
+            submit.disabled = false;
+        }
+    })
+</script>
+{% endblock %}

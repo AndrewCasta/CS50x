@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block style %}
+{% endblock %}
+
+{% block body %}
+<form action="/add" method="POST">
+    <input id='task' name="task" type="text" placeholder="task name">
+    <input id='submit' type="submit" disabled>
+</form>
+<script>
+    const task = document.querySelector('#task')
+    task.addEventListener("keyup", () => {
+        if (task.value == ""){
+            submit.disabled = true;
+        }
+        else {
+            submit.disabled = false;
+        }
+    })
+</script>
+{% endblock %}
